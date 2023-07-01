@@ -1,0 +1,105 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 30px;
+  margin-top: 5px;
+  height: 918px;
+  background-image: url(../assets/Rectangle\ 15.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  width: 1146px;
+  height: 153px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 135%;
+  /* or 81px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.sub-heading {
+  width: 683px;
+  height: 131px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 135%;
+  /* or 41px */
+
+  text-align: center;
+
+  color: #000000;
+}
+
+.get-start {
+  background: #08299b;
+  border-radius: 12px;
+  width: 191px;
+  height: 57px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 150%;
+  /* or 38px */
+
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  color: #ffffff;
+}
+
+.learn {
+  width: 180px;
+  height: 60px;
+
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+  /* or 33px */
+
+  letter-spacing: -0.011em;
+
+  color: #1e1e1e;
+}
+
+.fa-arrow-right {
+  left: 16.67%;
+  right: 16.67%;
+  top: 16.67%;
+  bottom: 16.67%;
+
+  color: #08299b;
+}
+
+.find-hospital {
+  width: 446px;
+  height: 58px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  /* or 42px */
+
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  color: #08299b;
+}

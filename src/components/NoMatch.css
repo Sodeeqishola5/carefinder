@@ -1,0 +1,18 @@
+#card {
+  margin: 150px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 345px;
+  height: 275px;
+
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e4ec;
+  border-radius: 12px;
+}

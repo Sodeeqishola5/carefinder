@@ -1,0 +1,32 @@
+#footer {
+  padding: 47px 93px;
+  width: 1349px;
+  height: 282px;
+
+  display: grid;
+  grid-template-columns: 225px 146px 220px;
+  column-gap: 300px;
+
+  background: #e0e4ec;
+}
+
+.footer-text p {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 150%;
+  /* or 45px */
+
+  letter-spacing: -0.011em;
+}
+
+#footer .footer-text span {
+  font-size: 30px;
+  color: #08299b;
+}
+
+.footer-text p {
+  color: #000;
+  font-size: 20px;
+}

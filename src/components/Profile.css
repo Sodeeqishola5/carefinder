@@ -1,0 +1,138 @@
+#profiles-form {
+  padding: 76px 0 69px 76px;
+  width: 1349px;
+  height: 1024px;
+
+  background: #fff;
+}
+
+#profiles-form .search {
+  
+  width: 688px;
+  height: 10px;
+
+  /* background: #f2f2f2; */
+  border-radius: 25px;
+}
+
+#profiles-form .search form {
+  display: flex;
+  width: 100%;
+  max-width: 608px;
+  padding: 15px;
+  margin: auto;
+}
+#profiles-form .search .form-control {
+  width: 608px;
+  height: 60px;
+
+  /* position: relative; */
+  /* box-sizing: border-box; */
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  /* border: none; */
+
+  /* font-family: "Inter";
+  font-style: normal; */
+  font-weight: 500;
+  line-height: 150%;
+  /* identical to box height, or 22px */
+
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  color: #c1c1c1;
+}
+
+#profiles-form .profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#profiles-form h1 {
+  width: 525px;
+  height: 55px;
+
+
+  font-weight: 700;
+font-size: 28px;
+  line-height: 150%;
+  /* or 60px */
+
+  text-align: center;
+  letter-spacing: -0.011em;
+
+  color: #08299B;
+}
+
+#profiles-form label {
+  margin-top: 14px;
+  width: 223px;
+  height: 57px;
+
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 150%;
+  /* or 38px */
+
+  text-align: left;
+  letter-spacing: -0.011em;
+
+  color: #000000;
+}
+
+#profiles-form .profile-form {
+  width: 543px;
+  height: 625px;
+  margin: 10vh auto;
+  border-radius: 20px;
+  /* background-color: #f2f2f2; */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+#profiles-form form {
+  width: 100%;
+  max-width: 608px;
+  padding: 15px;
+  margin: auto;
+}
+#profiles-form .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+#profiles-form .form-control:focus {
+  z-index: 2;
+}
+#profiles-form .form-signup input[type="text"] {
+  margin-bottom: -1px;
+  border-radius: 12px;
+  /* background: #e0e4ec; */
+}
+#profiles-form .form-signup input[type="email"] {
+  border-radius: 12px;
+  /* background: #e0e4ec; */
+}
+#profiles-form .form-signup input[type="password"] {
+  margin-bottom: -1px;
+  border-radius: 12px;
+  /* background: #e0e4ec; */
+}
+
+.form-btn {
+  text-align: center;
+}
+#profiles-form button {
+  margin-top: 39px;
+  width: 141px;
+  height: 59px;
+  font-size: 30px;
+
+  font-weight: 500;
+  background: #08299b;
+  border-radius: 12px;
+}
