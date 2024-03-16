@@ -83,6 +83,7 @@ h2 {
   right: 16.67%;
   top: 16.67%;
   bottom: 16.67%;
+  cursor: pointer;
 
   color: #08299b;
 }

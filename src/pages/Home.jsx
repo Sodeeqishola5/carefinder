@@ -21,12 +21,12 @@ const Home = () => {
       <p className="sub-heading">
         Discover Your Perfect Care: Find Your Hospital, Anytime, Anywhere!
       </p>
-      <button className="get-start" onClick={() => navigate('about')}>GET STARTED</button>
+      <button className="get-start" onClick={() => navigate('findHospital')}>GET STARTED</button>
       <p className="learn">
-        Learn more <i className="fa fa-arrow-right" aria-hidden="true"></i>
+        Learn more <i className="fa fa-arrow-right" aria-hidden="true" onClick={() => navigate('about')}></i>
       </p>
       <p className="find-hospital">Find a nearby hospital</p>
-     <div> <SearchForm /></div>
+      <div> <SearchForm /></div>
       <br />
       <button className="btn btn-danger" onClick={handleAuth}>
         Logout

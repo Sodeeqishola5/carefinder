@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav>
       <div style={{
-            padding: '36px 0 11px 119px',
+ e           padding: '36px 0 11px 119px',
             color: '#08299B',
             fontWeight: '600',
             fontSize: '35px',
