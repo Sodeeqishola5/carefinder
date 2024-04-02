@@ -1,18 +1,11 @@
-import { useDispatch, useSelector } from 'react-redux'
-import { logoutInitiate } from '../redux/actions'
+// import { useDispatch, useSelector } from 'react-redux'
+// import { logoutInitiate } from '../redux/actions'
 import { useNavigate } from 'react-router-dom'
 import SearchForm from '../components/SearchForm'
 import './Home.css'
 
 const Home = () => {
-  const { currentUser } = useSelector((state) => state.user)
-  const dispatch = useDispatch()
-
-  const handleAuth = () => {
-    if (currentUser) {
-      dispatch(logoutInitiate())
-    }
-  }
+ 
 
   const navigate = useNavigate()
   return (
@@ -27,10 +20,6 @@ const Home = () => {
       </p>
       <p className="find-hospital">Find a nearby hospital</p>
       <div> <SearchForm /></div>
-      <br />
-      <button className="btn btn-danger" onClick={handleAuth}>
-        Logout
-      </button>
     </div>
   )
 }

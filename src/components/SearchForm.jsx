@@ -1,38 +1,45 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { Icon } from '@iconify/react'
 import './SearchForm.css'
 
 const SearchForm = () => {
-  const [location, setLocation] = useState('')
-  const [hospitals, setHospitals] = useState([])
+  const [post, setPost] = useState({})
+  const [location, setLocation] = useState([])
+  const [locationClick, setLocationClick] = useState([])
+
+  const handleSearch = useEffect(() => {
+    axios.get(`https://api.reliancehmo.com/v3/providers/${locationClick}`)
+      .then(res => {
+        console.log(res)
+        setPost(res.data)
+      })
+      .catch(error => {
+        console.log('Error fetching hospitals:', error)
+      })
+  }, [locationClick])
 
   const handleLocationChange = (event) => {
     setLocation(event.target.value)
   }
 
-  const handleSearch = async (event) => {
-    event.preventDefault()
-
-    try {
-      // Fetch hospitals based on the entered location
-      const response = await fetch(`/api/hospitals?location=${location}`)
-      const data = await response.json()
-      setHospitals(data)
-    } catch (error) {
-      console.error('Error fetching hospitals:', error)
-    }
+  const handleLocationClick = () => {
+    setLocationClick(location)
   }
+
 
   return (
     <div style={{}}>
       <div id="input-wrapper">
         <form onSubmit={handleSearch}>
-          <Icon
-            icon="material-symbols:location-on-outline-rounded"
-            width="24"
-            height="24"
-            style={{alignSelf: "center"}}
-          />
+          <div>
+            <Icon
+              icon="material-symbols:location-on-outline-rounded"
+              width="24"
+              height="24"
+              style={{ alignSelf: "center" }}
+            />
+          </div>
           <input
             type="text"
             className="form-control"
@@ -40,21 +47,17 @@ const SearchForm = () => {
             onChange={handleLocationChange}
             placeholder="Federal Medical Center, Ebutte Metta,Lagos State"
           />
-          <button type="submit" style={{border: 'none', background: 'none'}}>
-            <Icon icon="material-symbols:search" width="24" height="24" />
-          </button>
+          <div>
+            <button type="submit" onClick={handleLocationClick} style={{ border: 'none', background: 'none' }}>
+              <Icon icon="material-symbols:search" width="24" height="24" />
+            </button>
+          </div>
         </form>
       </div>
-
-      <ul>
-        {hospitals.map((hospital) => (
-          <li key={hospital.id}>
-            <span>{hospital.name}</span>
-            <span>{hospital.address}</span>
-            {/* Display other hospital details */}
-          </li>
-        ))}
-      </ul>
+      <div>
+        <span>{post.name}</span>
+        <span>{post.address}</span>
+      </div>
     </div>
   )
 }

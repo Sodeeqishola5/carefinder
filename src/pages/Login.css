@@ -3,7 +3,7 @@
   /* display: flex;
   flex-direction: column; */
 
-  width: 719px;
+  width: 800px;
   height: 1024px;
 
   background: #e0e4ec;
@@ -153,6 +153,7 @@
   background-image: url(../assets/Ellipse\ 21.png);
 }
 #logreg-texts {
+  width: 800px;
   background-image: url(../assets/Rectangle\ 112.png);
   background-size: cover;
   background-repeat: no-repeat;

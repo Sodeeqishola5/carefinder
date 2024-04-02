@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './components/About'
 import FindHospital from './components/FindHospital'
 import Login from './pages/Login'
+import Logout from './pages/Logout'
 import Register from './pages/Signup'
 import Footer from './components/Footer'
 import UserRoute from './components/UserRoute'
@@ -43,6 +44,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/logout" element={<Logout />} />
         <Route path="*" element={<NoMatch/>} />
       </Routes>
       <Footer/>
