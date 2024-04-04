@@ -41,7 +41,7 @@ const Navbar = () => {
           style={{
             fontSize: '30px',
             color: '#fff',
-            background: '#08299B',
+            background: '#fd1d1d',
             borderRadius: '12px',
             padding: '2px 10px',
           }}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Icon } from '@iconify/react'
 import Arrow1 from '../assets/Arrow 1.png'
 import Arrow2 from '../assets/Arrow 2.png'
@@ -36,7 +37,9 @@ const About = () => {
             your healthcare experience by connecting with others and sharing
             valuable resources.
           </p>
-          <button className="btn-about">OUR SERVICES</button>
+          <Link to="/doctors">
+            <button className="btn-about">OUR SERVICES</button>
+          </Link>
         </div>
       </section>
       <section id="services">

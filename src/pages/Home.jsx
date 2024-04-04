@@ -1,12 +1,9 @@
-// import { useDispatch, useSelector } from 'react-redux'
-// import { logoutInitiate } from '../redux/actions'
 import { useNavigate } from 'react-router-dom'
 import SearchForm from '../components/SearchForm'
 import './Home.css'
 
 const Home = () => {
  
-
   const navigate = useNavigate()
   return (
     <div className="home">
