@@ -2,11 +2,9 @@
   padding: 47px 20px 47px 180px;
   width: 1583px;
   height: 282px;
-
   display: grid;
   grid-template-columns: 225px 146px 220px;
   column-gap: 300px;
-
   background: #e0e4ec;
 }
 
@@ -17,7 +15,6 @@
   font-size: 25px;
   line-height: 150%;
   /* or 45px */
-
   letter-spacing: -0.011em;
 }
 
@@ -29,4 +26,20 @@
 .footer-text p {
   color: #000;
   font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  #footer {
+    padding: 47px 20px;
+    width: 100%;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-text p {
+    text-align: center;
+  }
 }

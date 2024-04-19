@@ -104,3 +104,39 @@ h2 {
 
   color: #08299b;
 }
+
+@media screen and (max-width: 480px) {
+  .home {
+    width: 375px;
+    background-size: cover;
+  }
+
+  h2 {
+    width: 375px;
+    height: 120px;
+    font-weight: 500;
+    font-size: 30px;
+  }
+
+  .sub-heading {
+    width: 375px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .get-start {
+    width: 121px;
+    height: 47px;
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .learn {
+    margin-left: 60px;
+    font-size: 18px;
+  }
+
+  .find-hospital {
+    font-size: 25px;
+  }
+}

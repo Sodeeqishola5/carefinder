@@ -36,3 +36,9 @@
 
   color: #c1c1c1;
 }
+
+@media screen and (max-width: 480px) {
+  #input-wrapper {
+    width: 350px;
+  } 
+}

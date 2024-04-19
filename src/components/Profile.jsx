@@ -52,8 +52,8 @@ const Profile = () => {
   }
   return (
     <div id="profiles-form">
-      <div style={{display: 'flex'}}>
-        <div style={{}}>
+      <div className='search-control'>
+        <div >
           <div className="search">
             <form onSubmit={handleSearch}>
               <input
@@ -63,10 +63,7 @@ const Profile = () => {
                 onChange={handleLocationChange}
                 placeholder="Search hospital"
               />
-              <button
-                type="submit"
-                style={{ border: 'none', background: 'none' }}
-              >
+              <button type="submit">
                 <Icon icon="material-symbols:search" width="24" height="24" />
               </button>
             </form>
@@ -129,7 +126,7 @@ const Profile = () => {
             onChange={handleChange}
           />
           <div className="form-btn">
-            <button className=" btn btn-primary btn-block" type="submit">
+            <button className=" btn btn-primary btn-block btn-center" type="submit">
               Save
             </button>
           </div>
