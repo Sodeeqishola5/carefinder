@@ -1,4 +1,9 @@
-#register-form {
+#logreg-forms {
+  display: flex;
+}
+
+
+.register-forms {
   padding: 76px 0 69px 76px;
   /* display: flex;
   flex-direction: column; */
@@ -238,5 +243,11 @@
 
   #register-form .google-btn:after {
     content: "Google+";
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #logreg-forms {
+    flex-direction: column-reverse;
   }
 }

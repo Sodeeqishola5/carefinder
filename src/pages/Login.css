@@ -1,4 +1,8 @@
 #logreg-forms {
+  display: flex;
+}
+
+.logreg-forms {
   padding: 76px 0 69px 76px;
   /* display: flex;
   flex-direction: column; */
@@ -61,7 +65,7 @@
   color: #000000;
 }
 
-#logreg-forms .logreg-forms {
+#logreg-forms .logreg-form {
   width: 543px;
   height: 725px;
   margin: 10vh auto;
@@ -70,12 +74,14 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
+
 #logreg-forms form {
   width: 100%;
   max-width: 608px;
   padding: 15px;
   margin: auto;
 }
+
 #logreg-forms .form-control {
   position: relative;
   box-sizing: border-box;
@@ -83,14 +89,17 @@
   padding: 10px;
   font-size: 16px;
 }
+
 #logreg-forms .form-control:focus {
   z-index: 2;
 }
+
 #logreg-forms .form-signin input[type="email"] {
   margin-bottom: -1px;
   border-radius: 12px;
   background: #e0e4ec;
 }
+
 #logreg-forms .form-signin input[type="password"] {
   border-radius: 12px;
   background: #e0e4ec;
@@ -101,6 +110,7 @@
   margin: 0 auto;
   margin-bottom: 14px;
 }
+
 #logreg-forms .social-btn {
   font-weight: 100;
   color: white;
@@ -152,6 +162,7 @@
 #logreg-forms .ellipse21 {
   background-image: url(../assets/Ellipse\ 21.png);
 }
+
 #logreg-texts {
   width: 800px;
   background-image: url(../assets/Rectangle\ 112.png);
@@ -238,6 +249,7 @@
     margin: 0 auto;
     margin-bottom: 10px;
   }
+
   #logreg-forms .social-btn {
     font-size: 1.3rem;
     font-weight: 100;
@@ -245,12 +257,15 @@
     width: 200px;
     height: 56px;
   }
+
   #logreg-forms .social-btn:nth-child(1) {
     margin-bottom: 5px;
   }
+
   #logreg-forms .social-btn span {
     display: none;
   }
+
   #logreg-forms .facebook-btn:after {
     content: "Facebook";
   }
@@ -258,4 +273,72 @@
   #logreg-forms .google-btn:after {
     content: "Google+";
   }
+}
+
+@media screen and (max-width: 480px) {
+  #logreg-forms {
+    flex-direction: column-reverse;
+  }
+
+  .logreg-forms {
+    width: 375px;
+  }
+
+  #logreg-forms .logreg-form {
+    width: 343px;
+    height: 725px;
+    margin: 10vh 0 10vh -17.5vw;
+  }
+
+  #logreg-forms h1 {
+    margin-top: 25px;
+    width: 305px;
+    font-size: 40px;
+  }
+
+  #logreg-forms h3 {
+    width: 307px;
+    font-size: 22px;
+  }
+
+  #logreg-forms label {
+    margin-top: 20px;
+    font-size: 24px;
+  }
+
+  #logreg-forms .form-control {
+    margin-top: -15px;
+  }
+
+  #logreg-forms .social-btn {
+    font-size: 1.07rem;
+    width: 120px;
+    height: 36px;
+  }
+
+  #logreg-forms .social-login {
+    display: flex;
+  }
+
+  #logreg-texts {
+    max-width: 375px;
+  }
+
+  #logreg-texts .logreg-texts h3 {
+    font-size: 40px;
+  }
+
+  #logreg-texts .logreg-texts h4 {
+    font-size: 30px;
+  }
+
+  #logreg-texts .logreg-texts p {
+    font-size: 15px;
+  }
+
+  #logreg-texts .logreg-texts img {
+    max-width: 370px;
+    max-height: 370px;
+  }
+
 }

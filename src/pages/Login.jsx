@@ -44,9 +44,9 @@ const Login = () => {
     setState({ ...state, [name]: value })
   }
   return (
-    <div style={{ display: 'flex' }}>
-      <div id="logreg-forms">
-        <div className="logreg-forms">
+    <div id="logreg-forms">
+      <div className='logreg-forms'>
+        <div className="logreg-form">
           <form onSubmit={handleSubmit} className="form-signin">
             <h1 className="h3 mb-3 font-weight-normal">Welcome Back</h1>
             <h3 className="h3 mb-3 font-weight-normal">

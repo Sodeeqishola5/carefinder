@@ -38,8 +38,8 @@ const Register = () => {
     setState({ ...state, [name]: value })
   }
   return (
-    <div style={{ display: 'flex' }}>
-      <div id="register-form">
+    <div id='logreg-forms'>
+      <div className="register-forms">
         <div className="register-form">
           <form onSubmit={handleSubmit} className="form-signup">
             <h1

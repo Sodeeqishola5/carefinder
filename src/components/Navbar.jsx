@@ -79,6 +79,7 @@ const Navbar = () => {
                   padding: '2px 10px',
                 }}
                 to="/login"
+                onClick={() => setMenuOpen(false)}
               >
                 Login
               </NavLink>
@@ -91,6 +92,7 @@ const Navbar = () => {
                     padding: '2px 10px',
                   }}
                   to="/register"
+                  onClick={() => setMenuOpen(false)}
                 >
                   Signup
                 </NavLink>
