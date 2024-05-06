@@ -38,7 +38,7 @@ const Register = () => {
     setState({ ...state, [name]: value })
   }
   return (
-    <div id='logreg-forms'>
+    <div id='register-forms'>
       <div className="register-forms">
         <div className="register-form">
           <form onSubmit={handleSubmit} className="form-signup">
@@ -101,8 +101,8 @@ const Register = () => {
           </form>
         </div>
       </div>
-      <div id="logreg-texts">
-        <div className="logreg-texts">
+      <div id="register-texts">
+        <div className="register-texts">
           <h3>CareFinder</h3>
           <h4>Join Our Community</h4>
           <p>Enjoy seamless access to medical services.</p>
