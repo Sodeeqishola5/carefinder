@@ -237,45 +237,17 @@
   border-radius: 20px;
 }
 
-/* Mobile */
+/* ************************** */
+          /* iPad */
+/* ************************** */
+@media screen and (max-width: 1024px) {
+
+}
+/**********************************/
+          /* Mobile */
+/*********************************/
 
 @media screen and (max-width: 500px) {
-  #logreg-forms {
-    width: 300px;
-  }
-
-  #logreg-forms .social-login {
-    width: 200px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-
-  #logreg-forms .social-btn {
-    font-size: 1.3rem;
-    font-weight: 100;
-    color: white;
-    width: 200px;
-    height: 56px;
-  }
-
-  #logreg-forms .social-btn:nth-child(1) {
-    margin-bottom: 5px;
-  }
-
-  #logreg-forms .social-btn span {
-    display: none;
-  }
-
-  #logreg-forms .facebook-btn:after {
-    content: "Facebook";
-  }
-
-  #logreg-forms .google-btn:after {
-    content: "Google+";
-  }
-}
-
-@media screen and (max-width: 480px) {
   #logreg-forms {
     flex-direction: column-reverse;
   }
@@ -287,7 +259,7 @@
   #logreg-forms .logreg-form {
     width: 343px;
     height: 725px;
-    margin: 10vh 0 10vh -17.5vw;
+    margin: 10vh 0 10vh -16vw;
   }
 
   #logreg-forms h1 {
@@ -333,12 +305,46 @@
   }
 
   #logreg-texts .logreg-texts p {
+    width: 375px;
     font-size: 28px;
   }
 
   #logreg-texts .logreg-texts img {
-    max-width: 370px;
-    max-height: 370px;
+    max-width: 340px;
+    max-height: 340px;
   }
 
+  #logreg-forms {
+    width: 300px;
+  }
+
+  #logreg-forms .social-login {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  #logreg-forms .social-btn {
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+    width: 200px;
+    height: 36px;
+  }
+
+  #logreg-forms .social-btn:nth-child(1) {
+    margin-bottom: 5px;
+  }
+
+  #logreg-forms .social-btn span {
+    display: none;
+  }
+
+  #logreg-forms .facebook-btn:after {
+    content: "Facebook";
+  }
+
+  #logreg-forms .google-btn:after {
+    content: "Google+";
+  }
 }

@@ -1,3 +1,10 @@
+.sub-title {
+  padding: 36px 0 11px 119px;
+  color: #08299B;
+  font-weight: 600;
+  font-size: 35px;
+}
+
 nav {
   height: 100px;
   background: #b3b2b7;
@@ -49,12 +56,62 @@ nav ul li {
 .items {
   width: 65%;
 }
-@media screen and (max-width: 480px) {
+
+.item {
+  font-size: 30px;
+  color: #fff;
+  background: #08299B;
+  border-radius: 12px;
+  padding: 2px 10px;
+}
+
+
+.sign {
+  display: flex;
+}
+
+.logout {
+  font-size: 30px;
+  color: #fff;
+  background: #fd1d1d;
+  border-radius: 12px;
+  padding: 2px 10px;
+}
+
+/* ************************** */
+          /* iPad */
+/* ************************** */
+@media screen and (max-width: 1024px) {
+
+}
+
+/* ************************** */
+          /* Mobile */
+/* ************************** */
+
+@media screen and (max-width: 500px) {
+
+  .sub-title {
+    padding: 6px 0 0 10px;
+    font-size: 23px;
+  }
+
   nav .menu {
+    margin-right: 5px;
     display: flex;
+    top: 0.4rem;
+    right: 0.3rem;
+    width: 1.5rem;
+    height: 0.8rem;
+  }
+
+  nav .menu span {
+    height: 0.15rem;
   }
 
   nav {
+    width: 375px;
+    height: 50px;
     flex-direction: column;
     align-items: start;
   }
@@ -62,7 +119,7 @@ nav ul li {
   nav ul {
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 375px;
     margin-bottom: 0.25rem;
   }
 
@@ -73,17 +130,28 @@ nav ul li {
   nav ul li {
     padding: 10px 24px;
     list-style: none;
-    width: 100%;
+    width: 375px;
     text-align: center;
   }
 
   nav ul li a {
     margin: 0.2rem 0.5rem;
+    font-size: 25px;
   }
 
   .items {
     width: 100%;
     background: beige;
     z-index: 99;
+  }
+
+  .sign {
+    margin-left: 70px;
+    flex-direction: column;
+  }
+
+  .item {
+    width: 150px;
+    font-size: 20px;
   }
 }

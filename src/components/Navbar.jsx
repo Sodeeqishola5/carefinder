@@ -16,13 +16,8 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className='title'>
-        <div style={{
-          padding: '36px 0 11px 119px',
-          color: '#08299B',
-          fontWeight: '600',
-          fontSize: '35px',
-        }}>
+      <div id='title'>
+        <div className='sub-title'>
           CareFinder
         </div>
         <div className='menu' onClick={() => {
@@ -59,38 +54,20 @@ const Navbar = () => {
             currentUser ?
               <li>
                 <NavLink
-                  style={{
-                    fontSize: '30px',
-                    color: '#fff',
-                    background: '#fd1d1d',
-                    borderRadius: '12px',
-                    padding: '2px 10px',
-                  }}
+                  className='logout'
                   to="/logout"
                 >
                   Logout
                 </NavLink>
-              </li> : <li><NavLink
-                style={{
-                  fontSize: '30px',
-                  color: '#fff',
-                  background: '#08299B',
-                  borderRadius: '12px',
-                  padding: '2px 10px',
-                }}
+              </li> : <li className='sign'><NavLink
+                className='item'
                 to="/login"
                 onClick={() => setMenuOpen(false)}
               >
                 Login
               </NavLink>
                 <NavLink
-                  style={{
-                    fontSize: '30px',
-                    color: '#fff',
-                    background: '#08299B',
-                    borderRadius: '12px',
-                    padding: '2px 10px',
-                  }}
+                  className='item'
                   to="/register"
                   onClick={() => setMenuOpen(false)}
                 >

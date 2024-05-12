@@ -218,52 +218,62 @@
   /* background:  #D9D9D9; */
   border-radius: 20px;
 }
+
 /* ************************** */
-        /* Mobile */
+          /* iPad */
+/* ************************** */
+@media screen and (max-width: 1024px) {
+
+}
+
+/* ************************** */
+          /* Mobile */
 /* ************************** */
 
-@media screen and ((min-width:360px) and (max-width: 480px)) {
-  .register-forms {
-    width: 360px;
-}
-  
-.register-forms {
-  padding: 76px 0 69px 0px;
-  width: 360px;
-  height: 1024px;
-  background: #e0e4ec;
-}
 
-#register-forms .register-form {
-  width: 343px;
-  height: 725px;
-  margin: 10vh 0 10vh -18.5vw;
-}
-
-  #register-texts {
-    max-width: 360px;
-  }
-
-  #register-texts .register-texts img {
-    max-width: 340px;
-    max-height: 340px;
-  }
-}
-@media screen and ((min-width:375px) and (max-width: 480px)) {
+@media screen and (max-width: 500px) {
   #register-forms {
     flex-direction: column-reverse;
   }
 
   .register-forms {
-    margin-bottom: -200px;
-    padding: 76px 0 30px 0;
+    padding: 176px 0 30px 36px;
     width: 375px;
+  }
+
+  #register-forms form {
+    max-width: 375px;
+  }
+
+  #register-forms .register-form {
+    width: 340px;
+    height: 725px;
+    margin: -5vh 0 10vh -5vw;
   }
 
   #register-forms h1 {
     margin-top: 25px;
     width: 305px;
-    font-size: 33px;
+    font-size: 30px;
+  }
+
+  #register-forms label {
+    font-size: 24px;
+  }
+
+  #register-forms .form-control {
+    margin-top: -10px;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  #register-forms button[type="submit"] {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  #register-forms a {
+    font-size: 24px;
   }
 
   #register-texts {
@@ -279,47 +289,45 @@
   }
 
   #register-texts .register-texts p {
+    width: 375px;
     font-size: 28px;
   }
 
   #register-texts .register-texts img {
-    max-width: 370px;
-    max-height: 370px;
+    max-width: 340px;
+    max-height: 340px;
   }
-}
-
-@media screen and (max-width: 500px) {
-  #register-form {
+  #register-forms {
     width: 300px;
   }
 
-  #register-form .social-login {
+  #register-forms .social-login {
     width: 200px;
     margin: 0 auto;
     margin-bottom: 10px;
   }
 
-  #register-form .social-btn {
-    font-size: 1.3rem;
+  #register-forms .social-btn {
+    font-size: 1rem;
     font-weight: 100;
     color: white;
     width: 200px;
-    height: 56px;
+    height: 36px;
   }
 
-  #register-form .social-btn:nth-child(1) {
+  #register-forms .social-btn:nth-child(1) {
     margin-bottom: 5px;
   }
 
-  #register-form .social-btn span {
+  #register-forms .social-btn span {
     display: none;
   }
 
-  #register-form .facebook-btn:after {
+  #register-forms .facebook-btn:after {
     content: "Facebook";
   }
 
-  #register-form .google-btn:after {
+  #register-forms .google-btn:after {
     content: "Google+";
   }
 }
