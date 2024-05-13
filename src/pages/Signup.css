@@ -220,14 +220,34 @@
 }
 
 /* ************************** */
-          /* iPad */
+/* iPad */
 /* ************************** */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
+  .register-forms {
+    width: 512px;
+  }
 
+  #register-forms .register-form {
+    width: 403px;
+  }
+
+  #register-forms h1 {
+    margin-left: -15px;
+    width: 400px;
+  }
+
+  #register-texts {
+    width: 512px;
+  }
+
+  #register-texts .register-texts img {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 /* ************************** */
-          /* Mobile */
+/* Mobile */
 /* ************************** */
 
 
@@ -297,6 +317,7 @@
     max-width: 340px;
     max-height: 340px;
   }
+
   #register-forms {
     width: 300px;
   }

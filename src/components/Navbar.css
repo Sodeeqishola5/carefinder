@@ -79,14 +79,24 @@ nav ul li {
 }
 
 /* ************************** */
-          /* iPad */
+/* iPad */
 /* ************************** */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
+  nav {
+    width: 1007px;
+  }
 
+  .sub-title {
+    padding: 36px 0 11px 19px;
+  }
+
+  .items {
+    width: 75%;
+}
 }
 
 /* ************************** */
-          /* Mobile */
+/* Mobile */
 /* ************************** */
 
 @media screen and (max-width: 500px) {

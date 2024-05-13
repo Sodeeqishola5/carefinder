@@ -238,13 +238,41 @@
 }
 
 /* ************************** */
-          /* iPad */
+/* iPad */
 /* ************************** */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1150px) {
+  .logreg-forms {
+    width: 512px;
+  }
 
+  #logreg-forms .logreg-form {
+    width: 403px;
+  }
+
+  #logreg-forms h1 {
+    margin-left: -15px;
+    width: 400px;
+  }
+
+  #logreg-forms h3 {
+    margin-left: -40px;
+  }
+  #logreg-forms .social-btn {
+    width: 180px;
+  }
+
+  #logreg-texts {
+    width: 512px;
+  }
+
+  #logreg-texts .logreg-texts img {
+    width: 450px;
+    height: 450px;
+  }
 }
+
 /**********************************/
-          /* Mobile */
+/* Mobile */
 /*********************************/
 
 @media screen and (max-width: 500px) {
